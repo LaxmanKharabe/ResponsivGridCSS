@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 10px;
+    padding: 10px;
+    background-color: black;
+    justify-content: center;
+}
+.container > div{
+    border-radius: 10px;
+    background: rgba(250, 250, 250, 0.5) !important; 
+    padding: 20px;
+}
+.container  > div p{
+    font-size: 17px;
+    text-transform: capitalize;
+    line-height: 30px;
+}
+h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: blue;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+@media only screen and (max-width: 600px){
+    .container{
+        grid-template-columns: repeat(auto-fill, minmax(290px, 250px));
+        justify-content: center;
+    }
+}
